@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PageIndicator">
+        <attr name="itemBackgroud" format="reference"></attr>
+        <attr name="itemMarginLeft" format="dimension"></attr>
+        <attr name="itemMarginRight" format="dimension"></attr>
+        <attr name="itemHeight" format="dimension"></attr>
+        <attr name="itemWidth" format="dimension"></attr>
+        <attr name="itemTvColor" format="color"></attr>
+        <attr name="itemTvSize" format="dimension"></attr>
+
+    </declare-styleable>
+
+</resources>

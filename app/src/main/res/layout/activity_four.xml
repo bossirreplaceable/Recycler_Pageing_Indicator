@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:item="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical">
+
+
+    -
+
+    <RadioGroup
+        android:id="@+id/rg_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_horizontal_page"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:gravity="center"
+            android:text="横向分页" />
+
+        <RadioButton
+            android:id="@+id/rb_vertical_page"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="纵向分页" />
+
+        <RadioButton
+            android:id="@+id/rb_vertical_page2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="横向分页" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="第1页" />
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal" />
+
+        <com.boss.yobo1.first.fourth.view.PageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            item:itemBackgroud="@drawable/tab_selector"
+            item:itemWidth="20dp"
+            item:itemHeight="20dp"
+            item:itemTvSize="18px"
+            item:itemTvColor="#fff"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="30dp"></com.boss.yobo1.first.fourth.view.PageIndicator>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
